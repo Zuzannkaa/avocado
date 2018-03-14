@@ -2,9 +2,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ćwiczenia z js</title>
+	<title>cwiczenia z js</title>
 </head>
 <body>
+     <button id="pierwszy" onclick="guacamole()">
+     	wcisnij mnie
+     </button>
 
+     <button id="drugi" onclick="toast()">
+       nacisnij	
+     </button>
+
+     <button id="trzeci" onclick="pesto()">
+     	zrob to
+     </button>
+
+     <p id="demo"></p>
+
+     <script type="text/javascript">
+     	
+     	function avocado(a,b){
+     		console.log(a+b);
+     	}
+
+     	avocado(2,5);
+
+     	function guacamole(){
+     		alert("ojejciu");
+     	}
+     	function toast(){
+
+      		confirm("na pewno?");
+     	}
+     	function pesto(){
+
+     		var imie = prompt("jak ci na imie, niewiasto?", "harry potter");
+
+     		if (imie != null){
+
+     			document.getElementById("demo").
+     			innerHTML = "hello " + imie + ", co jest doktorku?";
+     		}
+
+     	}
+     </script>
 </body>
 </html>
